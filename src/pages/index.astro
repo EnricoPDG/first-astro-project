@@ -1,7 +1,13 @@
 ---
+import Social from "../components/Social.astro";
+import Skills from "../components/Skills"
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout pageTitle="Home Page">
-	<h2>My awesome blog subtitle</h2>
+<BaseLayout pageTitle="">
+	<div class="intro">
+		<h1>Welcome to my portfolio</h1>
+		<h3>Here are some of my career, hobbies, thoughts...</h3>
+		<Skills client:load skills={["Go", "AWS", "Python", "Vault Hashicorp", "Terraform", "Docker", "Linux", "IAM"]} />
+	</div>
 </BaseLayout>

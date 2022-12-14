@@ -1,10 +1,23 @@
 ---
-import NavItem from "./Nav-item.astro";
 ---
-
-<div class="nav-links">
-    <NavItem name="Home" link="/"/>
-    <NavItem name="About" link="/about"/>
-    <NavItem name="Blog" link="/blog" />
-    <NavItem name="Tags" link="/tags" />
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      Enrico
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <div class="nav-links">
+    <a href="" class="underline">About</a>
+    <a href="" class="underline">Blog</a>
+    <a href="" class="underline">Skills</a>
+    <a href="" class="underline">Career</a>
+  </div>
 </div>
